@@ -17,4 +17,12 @@ public class CameraFollow : MonoBehaviour
     {
         this.transform.position = _objectToFollow.position + _objectOffset;
     }
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+
 }
